@@ -193,6 +193,18 @@ This project uses Claude Code for development. For future enhancements:
 2. Review `TODO.md` for pending tasks
 3. Check `history.md` for project evolution
 4. Follow existing code patterns and design system
+5. Log each new request in `AGENT-EXCHANGE.md` before coding so Codex and Claude can document proposals and consensus.
+
+### Agent Exchange Shortcut
+Generate a fresh log template with:
+
+```bash
+./scripts/new-agent-entry.sh "Request Title" [status]
+./scripts/capture-doc-screens.sh [url]
+```
+
+- `new-agent-entry.sh` prepends a dated skeleton under the `## Entries` section in `AGENT-EXCHANGE.md` for collaborative logging.
+- `capture-doc-screens.sh` uses `npx capture-website` to capture desktop/mobile screenshots into `docs/screens/`; run after starting a local preview to document visual changes.
 
 ## 📄 License
 
